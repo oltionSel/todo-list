@@ -3,4 +3,54 @@
 require('../config/Database.php');
 
 
+class Task extends Database {
+
+    public function addTask($emri_detyres,$data_fillimit,$data_mbarimit,$statusi) {
+        $sql="INSERT INTO detyrat (emri_detyres,data_fillimit,data_mbarimit,statusi) VALUES ('$emri_detyres','$data_fillimit','$data_mbarimit','$statusi')";
+
+        $this->conn->query($sql);
+
+
+        echo "<script> 
+                alert('Detyra u ruajt me sukses!');
+                window.location.href='../public/add.php' 
+            </script>";
+    }
+
+    public function updateTask($id,$emri_detyres,$data_fillimit,$data_mbarimit,$statusi) {
+        $sql="UPDATE detyrat SET id='$id', emri_detyres='$emri_detyres', data_fillimit='$data_fillimit', data_mbarimit='$data_mbarimit', statusi='$statusi' WHERE id='$id' limit 1";
+
+        $this->conn->query($sql);
+
+        echo "<script> 
+                alert('Detyra u perditesua me sukses!');
+                window.location.href='../public/add.php' 
+            </script>";
+    }
+
+    public function deleteTask($id) {
+        $sql = "DELETE FROM detyrat WHERE id='$id'";
+        $this->conn->query($sql);
+
+        echo "<script> 
+                alert('Detyra u fshie me sukses!');
+                window.location.href='../pages/kategorite.php' 
+            </script>";
+    }
+
+    public function getAllTasks() {
+        $sql="SELECT * FROM detyrat";
+        $result=$this->conn->query($sql);
+        return $result->fetch_all(MYSQLI_ASSOC);
+    }
+
+    public function getTaskById($id) {
+        $sql="SELECT * FROM detyrat WHERE id='$id' limit 1";
+        $result=$this->conn->query($sql);
+        return $result->fetch_all(MYSQLI_ASSOC); 
+    }
+
+}
+
+
 ?>
