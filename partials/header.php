@@ -1,5 +1,5 @@
 <?php
-include('../config/config.php');
+define('BASE_URL','http://localhost/todo-list/');
 ?>
 
 <!DOCTYPE html>

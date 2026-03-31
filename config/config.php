@@ -1,5 +1,6 @@
 <?php
 
-define("BASE_URL",'http://localhost/todo-list/');
+define('BASE_URL','http://localhost/todo-list/');
+
 
 ?>
