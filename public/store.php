@@ -34,7 +34,7 @@ foreach($error as $err){
 }
 else{
     $task=new Task();
-    $task->getAllTasks($emri);
+    $task->addTask($emri_detyres,$data_fillimit,$data_mbarimit);
 
 }
 }

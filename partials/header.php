@@ -24,7 +24,7 @@ include('../config/config.php');
           <a class="nav-link active" aria-current="page" href="<?php BASE_URL ?>index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php BASE_URL ?> <!-- NDREQE QETU --> .php">Features</a>
+          <a class="nav-link" href="<?php BASE_URL ?>add.php">Features</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?php BASE_URL ?><!-- NDREQE QETU -->.php">Pricing</a>
