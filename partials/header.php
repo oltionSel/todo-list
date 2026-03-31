@@ -1,3 +1,7 @@
+<?php
+include('../config/config.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,13 +21,13 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="<?php BASE_URL ?>index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="<?php BASE_URL ?> <!-- NDREQE QETU --> .php">Features</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="<?php BASE_URL ?><!-- NDREQE QETU -->.php">Pricing</a>
         </li>
       </ul>
       <span class="navbar-text">
