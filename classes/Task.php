@@ -5,8 +5,8 @@ require('../config/Database.php');
 
 class Task extends Database {
 
-    public function addTask($emri_detyres,$data_fillimit,$data_mbarimit,$statusi) {
-        $sql="INSERT INTO detyrat (emri_detyres,data_fillimit,data_mbarimit,statusi) VALUES ('$emri_detyres','$data_fillimit','$data_mbarimit','$statusi')";
+    public function addTask($emri_detyres,$data_fillimit,$data_mbarimit) {
+        $sql="INSERT INTO detyrat (emri_detyres,data_fillimit,data_mbarimit) VALUES ('$emri_detyres','$data_fillimit','$data_mbarimit',)";
 
         $this->conn->query($sql);
 
@@ -17,8 +17,8 @@ class Task extends Database {
             </script>";
     }
 
-    public function updateTask($id,$emri_detyres,$data_fillimit,$data_mbarimit,$statusi) {
-        $sql="UPDATE detyrat SET id='$id', emri_detyres='$emri_detyres', data_fillimit='$data_fillimit', data_mbarimit='$data_mbarimit', statusi='$statusi' WHERE id='$id' limit 1";
+    public function updateTask($id,$emri_detyres,$data_fillimit,$data_mbarimit) {
+        $sql="UPDATE detyrat SET id='$id', emri_detyres='$emri_detyres', data_fillimit='$data_fillimit', data_mbarimit='$data_mbarimit' WHERE id='$id' limit 1";
 
         $this->conn->query($sql);
 
