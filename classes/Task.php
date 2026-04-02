@@ -47,10 +47,15 @@ class Task extends Database {
     public function getTaskById($id) {
         $sql="SELECT * FROM detyrat WHERE id='$id' limit 1";
         $result=$this->conn->query($sql);
-        return $result->fetch_all(MYSQLI_ASSOC); 
+        return $result->fetch_assoc(); 
     }
 
 
+    public function getStatus() {
+        $sql="SELECT statusi FROM detyrat";
+        $result=$this->conn->query($sql);
+        return $result->fetch_all(MYSQLI_ASSOC);
+    }
 
 
     public function changeStatus($id,$statusi) {
