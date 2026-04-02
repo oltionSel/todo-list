@@ -1,5 +1,6 @@
 <?php
 include('../partials/header.php');
+require_once('../classes/Task.php');
 $task=new Task();
 $tasks=$task->getAllTasks();
 ?>
