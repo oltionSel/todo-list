@@ -24,10 +24,10 @@ define('BASE_URL','http://localhost/todo-list/');
           <a class="nav-link active" aria-current="page" href="<?php BASE_URL ?>index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php BASE_URL ?>add.php">Features</a>
+          <a class="nav-link" href="<?php BASE_URL ?>public/add.php">Shto Detyra</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php BASE_URL ?><!-- NDREQE QETU -->.php">Pricing</a>
+          <a class="nav-link" href="<?php BASE_URL ?>public/detyrat.php">Lista e Detyrave</a>
         </li>
       </ul>
       <span class="navbar-text">
