@@ -30,9 +30,7 @@ define('BASE_URL','http://localhost/todo-list/');
           <a class="nav-link" href="<?php BASE_URL ?>public/detyrat.php">Lista e Detyrave</a>
         </li>
       </ul>
-      <span class="navbar-text">
-        Navbar text with an inline element
-      </span>
+
     </div>
   </div>
 </nav>

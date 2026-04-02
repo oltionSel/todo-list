@@ -8,7 +8,7 @@ include('../partials/header.php');
         <div class="col-md-6">
             <div class="card shadow-lg p-3 rounded rounded-3">
                 <p class="h1 text-primary mb-3">Shto Detyra</p>
-                <form action="" method="post" enctype="multipart/form-data">
+                <form action="store.php" method="post" enctype="multipart/form-data">
 
                     <!-- Emri i detyres -->
                     <div class="mb-3">
@@ -46,5 +46,5 @@ include('../partials/header.php');
 </div>
 
 <?php
-include('/partials/footer.php');
+include('../partials/footer.php');
 ?>

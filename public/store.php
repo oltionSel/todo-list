@@ -49,19 +49,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 
 
 
-    // Emri i detyres
-    if(isset($_POST['statusi']) && !empty($_POST['statusi'])) {
 
-        $statusi=htmlspecialchars(strip_tags(trim($_POST['statusi'])));
-
-        if(strlen($statusi)<2) {
-            $error[]="Statusi per detyren duhet te perbehet nga se paku 3 karaktere!";
-        }
-
-    }
-    else {
-        $error[]="Ju lutemi te plotesoni fushen e statusit per detyren!";
-    }
 
 
 
