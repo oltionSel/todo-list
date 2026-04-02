@@ -12,5 +12,5 @@ include('partials/header.php');
 
 
 <?php
-include('footer.php');
+include('partials/footer.php');
 ?>
