@@ -50,6 +50,20 @@ class Task extends Database {
         return $result->fetch_all(MYSQLI_ASSOC); 
     }
 
+
+
+
+    public function changeStatus($id,$statusi) {
+        $sql="UPDATE detyrat SET statusi='$statusi' WHERE id='$id' limit 1";
+        $this->conn->query($sql);
+
+        echo "<script> 
+                alert('Statusi i detyres u ndryshua me sukses!');
+                window.location.href='../public/change_status.php' 
+            </script>";
+
+    }
+
 }
 
 
