@@ -6,14 +6,14 @@ require('../config/Database.php');
 class Task extends Database {
 
     public function addTask($emri_detyres,$data_fillimit,$data_mbarimit) {
-        $sql="INSERT INTO detyrat (emri_detyres,data_fillimit,data_mbarimit) VALUES ('$emri_detyres','$data_fillimit','$data_mbarimit',)";
+        $sql="INSERT INTO detyrat (emri_detyres,data_fillimit,data_mbarimit) VALUES ('$emri_detyres','$data_fillimit','$data_mbarimit')";
 
         $this->conn->query($sql);
 
 
         echo "<script> 
                 alert('Detyra u ruajt me sukses!');
-                window.location.href='../public/add.php' 
+                window.location.href='http://localhost/todo-list/public/add.php' 
             </script>";
     }
 

@@ -1,19 +1,23 @@
 <?php
 
-class Database{
+class Database {
 
-protected $conn;
-    
-public function __construct(){
+    protected $servername="localhost";
+    protected $username="root";
+    protected $password="";
+    protected $dbname="menaxhimi_detyrave";
+    protected $conn;
 
-    $this->conn=new mysqli('localhost','root',"",'menaxhimi_detyrave');
+    public function __construct() {
 
-        if($this->conn->connect_errno>0){
-            die('Lidhja me databaze deshtoi'.$this->conn->connect_errno);
+        $this->conn=new mysqli($this->servername,$this->username,$this->password,$this->dbname);
+
+        if($this->conn->connect_error>0) {
+            die('Lidhja me databaze deshtoi: '.$this->conn->connect_error);
         }
 
     }
 
-
-
 }
+
+?>

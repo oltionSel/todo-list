@@ -21,13 +21,13 @@ define('BASE_URL','http://localhost/todo-list/');
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?php BASE_URL ?>index.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="http://localhost/todo-list/index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php BASE_URL ?>public/add.php">Shto Detyra</a>
+          <a class="nav-link" href="http://localhost/todo-list/public/add.php">Shto Detyra</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php BASE_URL ?>public/detyrat.php">Lista e Detyrave</a>
+          <a class="nav-link" href="http://localhost/todo-list/public/detyrat.php">Lista e Detyrave</a>
         </li>
       </ul>
 
