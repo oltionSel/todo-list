@@ -12,9 +12,9 @@ $tasks=$task->getTaskById($id);
         <div class="col-md-6">
             <div class="card shadow-lg p-3 rounded rounded-3">
                 <p class="h1 text-primary mb-3">Shto Detyra</p>
-                <form action="" method="post">
+                <form action="http://localhost/todo-list/public/update.php" method="post">
 
-             <input type="hidden" value="<?php echo $tasks['id'] ?>" name="id">
+                    <input type="hidden" value="<?php echo $tasks['id'] ?>" name="id">
                 
                     <!-- Emri i detyres -->
                     <div class="mb-3">

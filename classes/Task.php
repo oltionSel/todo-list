@@ -24,7 +24,7 @@ class Task extends Database {
 
         echo "<script> 
                 alert('Detyra u perditesua me sukses!');
-                window.location.href='../public/add.php' 
+                window.location.href='http://localhost/todo-list/public/add.php' 
             </script>";
     }
 
@@ -34,7 +34,7 @@ class Task extends Database {
 
         echo "<script> 
                 alert('Detyra u fshie me sukses!');
-                window.location.href='../pages/kategorite.php' 
+                window.location.href='http://localhost/todo-list/public/detyrat.php' 
             </script>";
     }
 
@@ -59,7 +59,7 @@ class Task extends Database {
 
         echo "<script> 
                 alert('Statusi i detyres u ndryshua me sukses!');
-                window.location.href='../public/change_status.php' 
+                window.location.href='http://localhost/todo-list/public/change_status.php' 
             </script>";
 
     }
