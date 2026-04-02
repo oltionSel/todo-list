@@ -55,5 +55,5 @@ $tasks=$task->getTaskById($id);
 </div>
 
 <?php
-include('/partials/footer.php');
+include('../partials/footer.php');
 ?>
