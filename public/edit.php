@@ -4,6 +4,8 @@ include('../classes/Task.php');
 $id=$_GET['id'];
 $task=new Task();
 $tasks=$task->getTaskById($id);
+
+
 ?>
 
 <div class="container-fluid bg-body-tertiary align-content-center" style="height:88.3vh">
@@ -13,14 +15,15 @@ $tasks=$task->getTaskById($id);
             <div class="card shadow-lg p-3 rounded rounded-3">
                 <p class="h1 text-primary mb-3">Shto Detyra</p>
                 <form action="http://localhost/todo-list/public/update.php" method="post">
-
+                  
+                    
                     <input type="hidden" value="<?php echo $tasks['id'] ?>" name="id">
                 
                     <!-- Emri i detyres -->
                     <div class="mb-3">
                         <input type="text" class="form-control" id="emri_detyres" name="emri_detyres"
                             placeholder="Shkruaj emrin e Detyres" 
-                            value="<?php echo $tasks['emri_detyres'] ?>">
+                            value="<?php echo $tasks['emri_detyres']?>">
                     </div>
 
                     <!-- Data e fillimit  -->
