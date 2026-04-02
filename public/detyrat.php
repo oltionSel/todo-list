@@ -17,7 +17,6 @@ $tasks=$task->getAllTasks();
            <div class="row">
                <div class="col-md-12 input-group">
                    
-                   <button type="submit" class="btn btn-primary w-25">Search</button>
                 </div>
            </div>
         </form>
