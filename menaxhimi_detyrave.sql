@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 31, 2026 at 06:37 PM
+-- Generation Time: Apr 02, 2026 at 06:41 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -32,7 +32,7 @@ CREATE TABLE `detyrat` (
   `emri_detyres` varchar(50) NOT NULL,
   `data_fillimit` date NOT NULL,
   `data_mbarimit` date NOT NULL,
-  `statusi` varchar(50) NOT NULL DEFAULT 'pa-perfunduar'
+  `statusi` enum('pa-perfunduar','perfunduar') NOT NULL DEFAULT 'pa-perfunduar'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
